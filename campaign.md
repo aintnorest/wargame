@@ -47,16 +47,17 @@ Players earn points for:
 - Controlling the central zone at round end (1 point)
 
 ### Rewards
-**Scenario Reward**
+
+**Campaign Rewards:**
 - **License for Conflict:** All players who interact with the Font gain the right to recruit forces
-- **Victory Spoils:** The player with the most points gains:
+- **Spoils:** The player with the most points gains:
   - The Font of Conflict as an Advantageous Terrain piece
   - 5 **Renown**
 
 **Secondary Goals Available**
-- First Blood: Be the first player to attack gains 5 **Renown**
-- Fortune Favors the Bold: Be the first player to interact with the Font of Conflict gains 5 **Renown**
-- Battlefield Prowess: Gain 5 **Coin** for each enemy defeated
+- First Blood
+- Fortune Favors the Bold
+- Battlefield Prowess
 
 ### Campaign Impact
 This scenario represents the founding moment of your mercenary company. Success here not only provides material rewards but establishes your initial standing in the multiverse of Conflict.

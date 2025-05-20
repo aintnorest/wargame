@@ -58,3 +58,22 @@ Game ends when either:
 - Requires interaction to control
 - Effect: Controlling team's leader gets +1 on all attacks
 - Campaign Reward: Grants "License for Conflict" to all who interact
+
+## Scenario List
+
+- Seize Fate (In campaign section. Intended for Campaign Play)
+
+## Goal List
+
+- First Blood:
+    Description: Be the first player to attack.
+    Scenario Reward: 1 victory point
+    Campaign Reward: gains 5 **Renown**
+- Fortune Favors the Bold: 
+    Description: Be the first player to interact with the Font of Conflict 
+    Scenario Reward: 1 victory point
+    Campaign Reward: gains 5 **Renown**
+- Battlefield Prowess:
+    Description: Killings the name of the game.
+    Scenario Reward: 1 victory point for every enemy defeated.
+    Campaign Reward: Gain 5 **Coin** for each enemy defeated

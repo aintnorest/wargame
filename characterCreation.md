@@ -14,19 +14,22 @@ Choose your model's size category first. This determines your starting stats:
 
 | Size Category | Base Size | Size Value | Strides | Wounds | Influence | Attack Reach |
 |:--------------|:----------|:-----------|:--------|:-------|:----------|:-------------|
-| Tiny          | < 25mm    | 0.5        | 7       | 1      | 0"        | 0"           |
+| Tiny          | < 25mm    | 0.5        | 8       | 0^     | 0"        | 0"           |
 | Small         | 25-32mm   | 1          | 5       | 1      | 0"        | 0"           |
 | Medium        | 40-50mm   | 2          | 3       | 1      | 1"        | 1"           |
 | Large         | 60-80mm   | 3          | 2       | 1      | 3"        | 2"           |
 | Huge          | 90-120mm  | 4          | 1       | 2      | 4"        | 4"           |
 | Gargantuan    | 130-150mm | 5          | 1       | 2      | 5"        | 6"           |
 
+^ must pay for wounds
+
 ### Stat Improvements
 Spend points to improve your base stats up to their maximum values:
 
 **Strides** (Movement Speed)
 - Cost varies by size:
-  - Tiny/Small: 2 points per +1
+  - Tiny: 1 points per +1
+  - Small: 2 points per +1
   - Medium: 3 points per +1
   - Large: 4 points per +1
   - Huge/Gargantuan: 5 points per +1
@@ -34,11 +37,13 @@ Spend points to improve your base stats up to their maximum values:
 
 **Wounds** (Health Points)
 - Progressive cost:
-  1. First additional wound: 1 point
-  2. Second additional wound: 2 points
-  3. Third additional wound: 3 points
-  4. Fourth additional wound: 4 points
-  5. Fifth additional wound: 5 points
+  1. First wound: 1 point
+  2. Second wound: 2 points
+  3. Third wound: 3 points
+  4. Fourth wound: 4 points
+  5. Fifth wound: 5 points
+  6. Sixth wound: 6 points
+  7. Seventh wound: 7 points
 - Maximum: Base Wounds + 5
 
 **Influence** (Control Range)
@@ -50,7 +55,7 @@ Spend points to improve your base stats up to their maximum values:
 - Maximum: Base Attack Reach + 3"
 
 **Resistances** (Physical/Energy/Psyche)  
-All models start with 1 in two resistance types. You can spend points to increase resistances up to a maximum of 5. The cost increases progressively as the value rises:
+All models start with 1 in two resistance types. You can spend points to increase resistances up to a maximum of 5 of each. The cost increases progressively as the value rises:
 
 - Resistance 2: 3 points  
 - Resistance 3: 5 points  

@@ -54,8 +54,8 @@ Spend points to improve your base stats up to their maximum values:
 - Cost: 4 points per +1"
 - Maximum: Base Attack Reach + 3"
 
-**Resistances** (Physical/Energy/Psyche)  
-All models start with 1 in two resistance types. You can spend points to increase resistances up to a maximum of 5 of each. The cost increases progressively as the value rises:
+**Resistances** (Physical/Energy/Psyche)
+All models start with a value of 1 in two resistance types of your choice, and a value of 0 in the remaining resistance type. You can spend points to increase resistances up to a maximum of 5 in each. The cost increases progressively as the value rises:
 
 - Resistance 2: 3 points  
 - Resistance 3: 5 points  
@@ -227,3 +227,76 @@ Allows response to enemy actions outside normal activation. Each has:
 | Null Strike*     | No damage dealt           | -3     | -          | -          |
 
 *Requires at least one Always effect
+To clarify the resistance selection process, the instructions could be reworded as follows:
+
+"**Resistances** (Physical/Energy/Psyche)
+All models start with a value of 1 in two resistance types of your choice, and a value of 0 in the remaining resistance type. You can spend points to increase resistances up to a maximum of 5 in each. The cost increases progressively as the value rises:"
+
+Here are two character examples:
+
+**Example Character 1: "Tank"**
+
+*   Size: Medium (Base Stats: Strides 3, Wounds 1, Influence 1", Attack Reach 1")
+*   Strides: 3 (Base)
+*   Wounds: 4 (Base 1 + 3 purchased) = 1+2+3 = 6 points
+*   Influence: 1" (Base)
+*   Attack Reach: 1" (Base)
+*   Resistances:
+  *   Physical: 4 (1+3) = 3+5+8 = 16 points
+  *   Energy: 3 (1+2) = 3+5 = 8 points
+  *   Psyche: 0
+*   Actions:
+  *   Attack: Strike (Physical, Range 1", Strength 3) = 4 points + Effect: Hinder (Always) 3 points
+  *   Ability: Hardened = 12 points
+*   **Total Points:** 50
+
+**Example Character 2: "Striker"**
+
+*   Size: Medium (Base Stats: Strides 3, Wounds 1, Influence 1", Attack Reach 1")
+*   Strides: 6 (Base 3 + 3 purchased) = 3+3+3 = 9 points
+*   Wounds: 1 (Base)
+*   Influence: 1" (Base)
+*   Attack Reach: 4" (Base 1" + 3 purchased) = 4+4+4 = 12 points
+*   Resistances:
+  *   Physical: 1
+  *   Energy: 3 (1+2) = 3+5 = 8 points
+  *   Psyche: 1
+*   Actions:
+  *   Attack: Strike (Physical, Range 4", Strength 2) = 2+2 = 4 points
+  *   Ability: Blink = 6 points
+  *   Ability: Evasion = 6 points
+*   **Total Points:** 50
+
+**Example Character 3: "Tank" (Play Sheet)**
+
+*   Size: Medium (Base Stats: Strides 3, Wounds 1, Influence 1", Attack Reach 1")
+*   Strides: 3
+*   Wounds: 4
+*   Influence: 1"
+*   Attack Reach: 1"
+*   Resistances:
+  *   Physical: 4
+  *   Energy: 3
+  *   Psyche: 0
+*   Actions:
+  *   Attack: Strike (Physical, Range 1", Strength 3, Hinder)
+  *   Ability: Hardened
+*   **Total Points:** 50
+
+**Example Character 4: "Striker" (Play Sheet)**
+
+*   Size: Medium (Base Stats: Strides 3, Wounds 1, Influence 1", Attack Reach 1")
+*   Strides: 6
+*   Wounds: 1
+*   Influence: 1"
+*   Attack Reach: 4"
+*   Resistances:
+  *   Physical: 1
+  *   Energy: 3
+  *   Psyche: 1
+*   Actions:
+  *   Attack: Strike (Physical, Range 4", Strength 2)
+  *   Ability: Blink
+  *   Ability: Evasion
+*   **Total Points:** 50
+

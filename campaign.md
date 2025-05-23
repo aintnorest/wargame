@@ -29,6 +29,9 @@ Campaign progression is tracked through two primary currencies:
 ### Scenario Overview
 In this inaugural battle, mercenary leaders compete to claim the power of a Font of Conflict - a mystical nexus that grants the authority to build a mercenary company.
 
+### Recommended Points
+35 - 60
+
 ### Setup
 - Battlefield: 2' x 2'
 - Center Terrain: Font of Conflict (Size 2, 40mm base, indestructible)

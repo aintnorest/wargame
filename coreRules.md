@@ -24,18 +24,20 @@
             * Minimum sum: -3 (Red Joker + Jack)
             * Maximum sum: +7 (Black Joker + 3)
         * **Probability of Each Sum:**
-            * There are 18 * 17 / 2 = 153 possible unique combinations of two cards.
-            * P(-3) = 4/153
-            * P(-2) = 8/153
-            * P(-1) = 12/153
-            * P(0) = 16/153
-            * P(1) = 20/153
-            * P(2) = 20/153
-            * P(3) = 20/153
-            * P(4) = 17/153
-            * P(5) = 16/153
-            * P(6) = 12/153
-            * P(7) = 8/153
+            | Sum | Number of Ways | Probability (Fraction) | Probability (Percentage) |
+            |:----|:---------------|:-----------------------|:-------------------------|
+            | -3  | 4              | 4/153                  | 2.61%                    |
+            | -2  | 6              | 6/153                  | 3.92%                    |
+            | -1  | 4              | 4/153                  | 2.61%                    |
+            | 0   | 20             | 20/153                 | 13.07%                   |
+            | 1   | 20             | 20/153                 | 13.07%                   |
+            | 2   | 23             | 23/153                 | 15.03%                   |
+            | 3   | 20             | 20/153                 | 13.07%                   |
+            | 4   | 22             | 22/153                 | 14.38%                   |
+            | 5   | 20             | 20/153                 | 13.07%                   |
+            | 6   | 10             | 10/153                 | 6.54%                    |
+            | 7   | 4              | 4/153                  | 2.61%                    |
+            
         * **Probability of a Specific Suit:**
             * There are 5 cards of each suit (A, 2, 3, J, and Red Joker acting as that suit)
             * Probability of drawing a specific suit as the first card = 5/18

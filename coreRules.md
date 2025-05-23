@@ -1,18 +1,20 @@
-# Core Rules - Project [Game Title - Conflict]
+# Core Rules
 
-## 1. Game Introduction & Goals:
+Working Game Title: Conflict
+
+## Game Introduction & Goals
 
 * Theme to be fleshed out later but to get a taste look in campaign.md
 * Goals: A strategic wargame that is model-agnostic, where model size matters, and all decisions have a significant impact.
 
-## 2. Basic Luck Mechanic:
+## Basic Luck Mechanic
 
 Conflict uses a modified deck of cards. The deck comprises Aces, 1s, 2s, 3s, and Jacks of each suit and both jokers. Aces are worth 1, 2s are worth 2, 3s are worth 3, Jacks are worth -1,  A Red Joker is worth -2 and counts as any suit, and A Black Joker is worth +4 and counts as no suit.
   * Players flip two cards from the modified deck.
   * For ties suite dominance is  Spades (♠), Hearts (♥), Diamonds (♦), and Clubs (♣)
   * The result of the card flip is added to relevant character stats and modifiers to determine the success of an action (e.g., attacking, defending). The difference between the attacker's and defender's totals determines damage.
   
-### Probability Calculations:
+### Probability Calculations
 
   * **Deck Composition:**
     * 4 Aces (1 each of Spades, Hearts, Diamonds, Clubs)
@@ -49,7 +51,7 @@ Conflict uses a modified deck of cards. The deck comprises Aces, 1s, 2s, 3s, and
 
     NOTE: Currently character creation uses the first and last to trigger abilities. I'm leaving the middle option because I may add it as an option for ability / effect purchasing.
 
-## 3. Core Mechanics:
+## Core Mechanics
 
 ### Game Flow
 
@@ -106,7 +108,7 @@ Each character has a number of attacks consisting of the following stats:
 
 For more information on attack construction and types of effects that can be added, refer to the [Character Creation document](characterCreation.md).
 
-### Maneuvers:
+### Maneuvers
 
 * **Disengage:**
   * Cost: Half max Strides, rounded up.
@@ -161,7 +163,7 @@ For more information on attack construction and types of effects that can be add
   * Restrictions: Target model must be at least two sizes smaller and in base-to-base contact.
   * Description: Throw enemy model. Thrown models move in a straight line from the thrower. Range = (Your Size - Target Size - 1) inches. The target becomes prone.
 
-### Strategic Placement:
+### Strategic Placement
 
 * **Engagement:** While within the Attack Reach of one or more enemy models, a model cannot end its movement at a distance greater than its starting distance from the closest engaging enemy, unless using the Disengage maneuver.
 * **Attack Reach:** Determined by Size Category. Represents the zone within which a model can make melee attacks or interact with objectives.
@@ -174,7 +176,7 @@ For more information on attack construction and types of effects that can be add
   * Full Cover (+2 to defense roll): Terrain Size <= Character Size - 2.
   * Obscured (No LOS): Terrain Size >= Character Size.
 
-### Interactions:
+### Interactions
 
 * **Push:** Push target directly away by half the size difference (min 1"). Cannot push targets more than one size larger.
 
@@ -187,7 +189,7 @@ For more information on attack construction and types of effects that can be add
     * Resistance equal to Size in both Physical & Energy
   * **General Destructible Terrain Rules:** Some terrain leaves effects on destruction; these effects are determined during terrain placement.
 
-### Combat Resolution:
+### Combat Resolution
   1. Declare Target and Attack.
   2. Attacker flips two cards (A=1, 2=2, 3=3, J=-1, Red Joker = -2, Black Joker = +4) and sums. Adds Attack Skill and attack bonuses. (Total Attack Value)
   3. Defender flips two cards and sums. Adds relevant Resistance and defense bonuses. (Total Defense Value)
@@ -196,7 +198,7 @@ For more information on attack construction and types of effects that can be add
   6. Apply Damage (reduce Wounds).
   7. Apply Attack Effects.
 
-## 4. Temporary Conditions
+## Temporary Conditions
 The following conditions can be inflicted by attacks and abilities. They can each stack up to 3 times:
 
 * **Slow**

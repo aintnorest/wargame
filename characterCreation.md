@@ -82,6 +82,8 @@ When purchasing any action, you may choose to make it more taxing:
 ### Ability Actions
 Special traits that grant unique advantages. Each can be purchased once unless specified.
 
+- For abilities that grant bonuses, bonuses only last until start of model's next activation
+
 **Abilities**
 | Ability               | Description                                           | Cost |
 |:----------------------|:------------------------------------------------------|:-----|

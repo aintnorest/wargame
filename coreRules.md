@@ -39,11 +39,13 @@
             | 7   | 4              | 4/153                  | 2.61%                    |
             
         * **Probability of a Specific Suit:**
-            * There are 5 cards of each suit (A, 2, 3, J, and Red Joker acting as that suit)
-            * Probability of drawing a specific suit as the first card = 5/18
-            * Probability of drawing a specific suit as the second card, given the first was the same suit = 4/17
-            * Probability of drawing two specific suits = (5/18)*(4/17) = 20/306
-            * Probability of drawing two cards of the same suit = (4*20)/306 = 80/306
+            | Event                                                                                                           | Percentage (approx.) |
+            |:----------------------------------------------------------------------------------------------------------------|:---------------------|
+            | At Least One of Two Cards Counts as a Specific Suit (e.g., at least one of your two cards can count as a Heart) | 49.02%               |
+            | Drawing One Card of a Specific Suit AND One Card of a Different Specific Suit (e.g., one Heart and one Spade)   | 15.69%               |
+            | Drawing Two Cards of a Single Specific Suit (e.g., exactly two Hearts)                                          | 6.54%                |
+
+            NOTE: Currently character creation uses the first and last to trigger abilities. I'm leaving the middle option because I may add it as an option for ability / effect purchasing.
 
 ## 3. Core Mechanics:
 * **Round Structure:** A game is divided into a series of rounds. During each round, players alternate activating one model at a time, starting with the player who has initiative. A round ends when all models have had the opportunity to activate.

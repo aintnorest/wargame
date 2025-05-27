@@ -70,7 +70,6 @@ Conflict uses a modified deck of cards. The deck comprises Aces, 1s, 2s, 3s, and
   4.  **Perform Actions:**
     During the active model's activation, the player may perform the following actions in any order as long as the action doesn't have an exhausted token. After performing the action place an **Exhausted Token** on the action to indicate it's been used this turn:
     *   **One Move Action**
-    *   **One Maneuver Action**
     *   **One Attack Action**
     *   **Use Any Ability Actions:**
   5.  **End of Turn:**
@@ -91,14 +90,8 @@ Conflict uses a modified deck of cards. The deck comprises Aces, 1s, 2s, 3s, and
     * Costs 1 Stride per size difference between model and terrain
     * Place the model within 1/2" of the climbed edge
     * Example: Size 1 model climbing size 3 terrain spends 2 Strides
-  * **Run:** Spend all remaining Strides to move double distance. Cannot attack this activation and gains +1 Defense until next activation.
-  * **Drop Prone:** May drop prone at any time during movement at no Stride cost.
-
-* **Prone Rules:** A model that is prone:
-  * Spends 1 Stride to stand up
-  * Spends 2 Strides to move 1 Stride while prone
-  * Counts as one size smaller for cover
-  * Grants +1 attack strength to attackers in base contact
+  * **Run:** Spend all remaining Strides to move double distance. Cannot use an attack action this turn and gains +1 Defense until next activation.
+  * **Shake:** Spend 1 Stride to remove 1 temporary condition token. Can only perform 1 shake per Move Action
 
 ### Attack
 
@@ -117,61 +110,6 @@ Each character has a number of attacks consisting of the following stats:
   * Both Suits: Effect triggers if both attack cards match target's suit
 
 For more information on attack construction and types of effects that can be added, refer to the [Character Creation document](characterCreation.md#attack-creation-guide).
-
-### Maneuvers
-NOTE: Maybe move a few things into movement and the rest of the maneuvers can be purchasable abilities. Think I'm moving charging into an ability as well.
-* **Disengage:**
-  * Cost: Half max Strides, rounded up.
-  * Restrictions: None.
-  * Description: Move up to max Strides away from an engaged enemy model without normal engagement restrictions.
-* **Charge:**
-  * Cost: Max Strides
-  * Restrictions: None.
-  * Description: Move up to max Strides in a straight line. +1 attack bonus on first attack against target engaged at the end of the charge. If that attack deals damage, Push (Momentum) may be used.
-* **Run:**
-  * Cost: Max Strides
-  * Restrictions: Cannot attack.
-  * Description: Double max Strides. +1 to Defense until the start of the model's next turn.
-* **Take Cover:**
-  * Cost: 1 Stride.
-  * Restrictions: None.
-  * Description: Increase cover level by one step. This lasts until the start of the model's next turn or until the model moves.
-* **Focused Attack:**
-  * Cost: Max Strides
-  * Restrictions: None.
-  * Description: +2 bonus to next attack.
-* **Brace:**
-  * Cost: Half max Strides, rounded up.
-  * Restrictions: None.
-  * Description: Count as one size larger for defending against pushes or throws until the start of the model's next turn.
-* **Climb:**
-  * Cost: Reduce Strides
-  * Restrictions: Cannot climb terrain larger than own size.
-  * Description: Reduce remaining Strides by 1 for each size category the terrain is larger than the model (min 0).
-* **Interact:**
-  * Cost: 1 Stride.
-  * Restrictions: Must be in base-to-base contact.
-  * Description: Interact with objective or terrain.
-* **Shake**
-  * Cost: None.
-  * Restrictions: None.
-  * Description: remove 1 temporary condition token.
-* **Shift:**
-  * Cost: None.
-  * Restrictions: None.
-  * Description: 1-inch move; does not prevent other actions.
-* **Aid:**
-  * Cost: 1 Stride.
-  * Restrictions: None.
-  * Description: +1 attack bonus to friendly model within the model's Influence against an enemy model within the model's Attack Reach.
-* **Throw (Terrain):**
-  * Cost: Lose attack or movement.
-  * Restrictions: Target terrain must be at least two sizes smaller and within reach.
-  * Description: Throw terrain. Thrown terrain moves in a straight line from the thrower. Range = (Your Size - Terrain Size - 1) inches. Thrown terrain is destroyed.
-* **Throw (Model):**
-  * Cost: Lose attack or movement.
-  * Restrictions: Target model must be at least two sizes smaller and in base-to-base contact.
-  * Description: Throw enemy model. Thrown models move in a straight line from the thrower. Range = (Your Size - Target Size - 1) inches. The target becomes prone.
 
 ### Strategic Placement
 NOTE: Maybe get rid of engagement for simplicity make it an ability.
@@ -192,11 +130,11 @@ NOTE: Maybe get rid of engagement for simplicity make it an ability.
 * **Falling:**
   *   A model falls when it is moved to a position where it is no longer supported by the terrain it started on top of. This can occur due to a Push, Throw, or terrain destruction.
   *   **Falling Damage:**
-      *   The falling model immediately becomes Prone.
+      *   The falling model gains **Slow**, **Weak**, or **Hindered** Model owner's choice.
       *   The model suffers damage equal to the height fallen in size categories (minimum 1) + size of the model falling (rounded down, minimum 0). For example, falling from a terrain feature that is Size 3 deals 3 damage.
       *   Falling damage is considered Physical damage.
   *   **Terrain on Impact:** If a falling model lands on a piece of terrain, that terrain is subject to the "Terrain Interaction" rules as if the model were thrown at it.
-  *   **Models on Impact:** If a falling model lands on another model, both models become Prone and each suffers a point of Physical damage per size category of the other model. The smaller model is displaced by it's owner so no part of it's base is touching the other model, must be a legal placement.
+  *   **Models on Impact:** If a falling model lands on another model, both models gain **Slow**, **Weak**, or **Hindered** Model owner's choice and each suffers a point of Physical damage per size category of the other model. The smaller model is displaced so no part of it's base is touching the other model, must be a legal placement, displacement must occur in a manor of least movement while all other rules are followed.
 * **Terrain Interaction:**
   * If terrain is impacted by a model or another piece of terrain, it is destroyed if the size of the thrown object is greater than the size of the impacted terrain, unless it is reinforced terrain.
   * When terrain impacts models or reinforced terrain, the attack value is equal to the Size of the thrown terrain (Physical attack).

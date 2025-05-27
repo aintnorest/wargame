@@ -10,12 +10,12 @@
   - Campaign mode restricts which models can be leaders
 
 ### 2. Initiative
-- Each player flips two cards
+- Add [Card Resolution](coreRules.md#basic-luck-mechanic)
 - Add applicable modifiers from:
   - Model special abilities
   - Scenario terrain effects
 - Highest total wins initiative
-- Ties are resolved by suit order (Spades (♠), Hearts (♥), Diamonds (♦), and Clubs (♣)) or repeated flips until clear winner emerges
+- Ties are resolved by [suit order](coreRules.md#basic-luck-mechanic) or repeated flips until clear winner emerges
 
 ### 3. Scenario Selection
 - Each player secretly selects one scenario from shared list
@@ -67,7 +67,7 @@ Game ends when either:
 
 ## Scenario List
 
-- Seize Fate (In campaign section. Intended for Campaign Play)
+- Seize Fate [Campaign Scenario](campaign.md#starting-scenario-seize-fate)
 
 ## Goal List
 

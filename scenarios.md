@@ -59,6 +59,12 @@ Game ends when either:
 - Effect: Controlling team's leader gets +1 on all attacks
 - Campaign Reward: Grants "License for Conflict" to all who interact
 
+**Ancient Gateway**
+- Size: 2
+- Reinforced Terrain
+- Requires interaction to control
+- Controlling player's friendly units starting within 5" of the Gateway gain one stride.
+
 ## Scenario List
 
 - Seize Fate (In campaign section. Intended for Campaign Play)

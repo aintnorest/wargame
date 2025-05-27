@@ -60,26 +60,21 @@ Conflict uses a modified deck of cards. The deck comprises Aces, 1s, 2s, 3s, and
 
   1.  **Pass Activation (Optional):**
     If the opposing player has at least 2 more un-activated models than the active player, the active player may choose to pass their activation. If this option is chosen:
-
     *   The active player activates no model for this turn.
     *   The activation is immediately passed to the opposing player.
     *   The active player's turn ends.
   2.  **Choose and Declare Activation:**
-
     *   Select a friendly model that has not activated this round and declare it as the active model.
   3.  **Remove Exhaust Tokens:**
-
     *   Remove one **Exhaust Token** from each of the model's Actions.
   4.  **Perform Actions:**
     During the active model's activation, the player may perform the following actions in any order as long as the action doesn't have an exhausted token. After performing the action place an **Exhausted Token** on the action to indicate it's been used this turn:
-
     *   **One Move Action**
     *   **One Maneuver Action**
     *   **One Attack Action**
     *   **Use Any Ability Actions:**
   5.  **End of Turn:**
     At the end of the turn, perform the following steps in order:
-
     *   Place a token next to the active model to indicate it has activated this round.
     *   Pass the activation to the opposing player.
     *   The opposing player's turn begins.
@@ -106,7 +101,7 @@ Each character has a number of attacks consisting of the following stats:
   * Match Suit: Effect triggers if either attack card matches target's suit
   * Both Suits: Effect triggers if both attack cards match target's suit
 
-For more information on attack construction and types of effects that can be added, refer to the [Character Creation document](characterCreation.md).
+For more information on attack construction and types of effects that can be added, refer to the [Character Creation document](characterCreation.md#attack-creation-guide).
 
 ### Maneuvers
 
@@ -179,7 +174,14 @@ For more information on attack construction and types of effects that can be add
 ### Interactions
 
 * **Push:** Push target directly away by half the size difference (min 1"). Cannot push targets more than one size larger.
-
+* **Falling:**
+  *   A model falls when it is moved to a position where it is no longer supported by the terrain it started on top of. This can occur due to a Push, Throw, or terrain destruction.
+  *   **Falling Damage:**
+      *   The falling model immediately becomes Prone.
+      *   The model suffers damage equal to the height fallen in size categories (minimum 1) + size of the model falling (rounded down, minimum 0). For example, falling from a terrain feature that is Size 3 deals 3 damage.
+      *   Falling damage is considered Physical damage.
+  *   **Terrain on Impact:** If a falling model lands on a piece of terrain, that terrain is subject to the "Terrain Interaction" rules as if the model were thrown at it.
+  *   **Models on Impact:** If a falling model lands on another model, both models become Prone and each suffers a point of Physical damage per size category of the other model. The smaller model is displaced by it's owner so no part of it's base is touching the other model, must be a legal placement.
 * **Terrain Interaction:**
   * If terrain is impacted by a model or another piece of terrain, it is destroyed if the size of the thrown object is greater than the size of the impacted terrain, unless it is reinforced terrain.
   * When terrain impacts models or reinforced terrain, the attack value is equal to the Size of the thrown terrain (Physical attack).

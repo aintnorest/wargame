@@ -81,9 +81,24 @@ Conflict uses a modified deck of cards. The deck comprises Aces, 1s, 2s, 3s, and
 
 ### Movement
 
-  * **Base Strides and Splitting Movement:** A model has a number of Strides, as determined by its Size Category and character creation. Each Stride can be up to the length of the model's base diameter. Models that are two sizes larger than a piece of terrain can move over it if their base can reach the other side; this costs 1 Stride.
-  * **Climb:** If a model's base can fit on top of a piece of terrain, and the terrain size is greater than or equal to the model's size, the model can climb the terrain. To climb, a model loses a number of Strides equal to the terrain size divided by the model size, rounded up. The model is then placed within 1/2" of the edge from where it climbed. For example, a size 1 model climbing size 4 terrain would lose 4 Strides.
-  * **Prone:** A model that is prone may spend 1 stride to stand up. A prone model spends 2 strides to move 1 stride. A prone model counts as one size category smaller for determining cover. Attacking a prone model that is base to base gains a +1 attack strength. A model may fall prone at any time.
+* **Base Movement:** A model has a number of Strides determined by its Size Category and character creation. Each Stride equals the length of the model's base diameter.
+
+* **Move Action:** During its activation, a model may take one Move action. During a Move action, a model may do any combination of the following until it runs out of Strides:
+  * **Standard Move:** Move up to one Stride in any direction.
+  * **Step Over:** Cross terrain up to half the model's size without spending additional Strides.
+  * **Interact:** Spend 1 Stride while in base contact to interact with an objective or terrain.
+  * **Climb:** When a model's base can fit on terrain that is their size or smaller:
+    * Costs 1 Stride per size difference between model and terrain
+    * Place the model within 1/2" of the climbed edge
+    * Example: Size 1 model climbing size 3 terrain spends 2 Strides
+  * **Run:** Spend all remaining Strides to move double distance. Cannot attack this activation and gains +1 Defense until next activation.
+  * **Drop Prone:** May drop prone at any time during movement at no Stride cost.
+
+* **Prone Rules:** A model that is prone:
+  * Spends 1 Stride to stand up
+  * Spends 2 Strides to move 1 Stride while prone
+  * Counts as one size smaller for cover
+  * Grants +1 attack strength to attackers in base contact
 
 ### Attack
 
@@ -104,7 +119,7 @@ Each character has a number of attacks consisting of the following stats:
 For more information on attack construction and types of effects that can be added, refer to the [Character Creation document](characterCreation.md#attack-creation-guide).
 
 ### Maneuvers
-
+NOTE: Maybe move a few things into movement and the rest of the maneuvers can be purchasable abilities. Think I'm moving charging into an ability as well.
 * **Disengage:**
   * Cost: Half max Strides, rounded up.
   * Restrictions: None.
@@ -159,7 +174,7 @@ For more information on attack construction and types of effects that can be add
   * Description: Throw enemy model. Thrown models move in a straight line from the thrower. Range = (Your Size - Target Size - 1) inches. The target becomes prone.
 
 ### Strategic Placement
-
+NOTE: Maybe get rid of engagement for simplicity make it an ability.
 * **Engagement:** While within the Attack Reach of one or more enemy models, a model cannot end its movement at a distance greater than its starting distance from the closest engaging enemy, unless using the Disengage maneuver.
 * **Attack Reach:** Determined by Size Category. Represents the zone within which a model can make melee attacks or interact with objectives.
 * **Influence:** Determined by Size Category. Represents the radius around a model within which it exerts control for zone objectives. For zone control, a model is considered to be within the zone if any part of its Base Influence is within the zone.
@@ -204,7 +219,7 @@ For more information on attack construction and types of effects that can be add
 The following conditions can be inflicted by attacks and abilities. They can each stack up to 3 times:
 
 * **Slow**
-  * Target's movement speed is reduced by 1 (minimum of 1)
+  * Target loses 1 stride (minimum of 1)
   * Lasts until the start of the target's next activation
   * Multiple instances stack
 

@@ -1,6 +1,7 @@
 # Character Creation Guide
 
 ## Point Buy System
+
 Characters are created using a point-buy system. Points can be spent on:
 - Base Stat Improvements
 - Attack Actions (maximum 4)
@@ -10,6 +11,7 @@ Characters are created using a point-buy system. Points can be spent on:
 ## Base Stats
 
 ### Size Categories
+
 Choose your model's size category first. This determines your starting stats:
 
 | Size Category | Base Size | Size Value | Strides | Wounds | Influence | Attack Reach |
@@ -24,6 +26,7 @@ Choose your model's size category first. This determines your starting stats:
 ^ must pay for wounds
 
 ### Stat Improvements
+
 Spend points to improve your base stats up to their maximum values:
 
 **Strides** (Movement Speed)
@@ -65,14 +68,17 @@ All models start with a value of 1 in two resistance types of your choice, and a
 **Maximum:** 5 in any resistance type.
 
 ## Action Types
+
 Each character can purchase up to 8 actions (NOTE: I want this to fit on a card so maybe less):
 
 ### Available Actions
+
 - Attack Actions (1-4)
 - Ability Actions (0-4)
 - Reaction Actions (0-2)
 
 ### Exhaustion Option
+
 When purchasing any action, you may choose to make it more taxing:
 - Action inflicts 2 Exhaust Tokens (instead of 1)
 - Reduces purchase cost by 2 points
@@ -80,32 +86,54 @@ When purchasing any action, you may choose to make it more taxing:
 - Must be decided at purchase
 
 ### Ability Actions
+
 Special traits that grant unique advantages. Each can be purchased once unless specified.
 
 - For abilities that grant bonuses, bonuses only last until start of model's next activation
 
 **Abilities**
-| Ability               | Description                                           | Cost |
-|:----------------------|:------------------------------------------------------|:-----|
-| Blink                 | 6" teleport, requires LOS                             | 6    |
-| Effect Resistance     | Remove one effect within 4" + reach at activation end | 8    |
-| Evasion               | +2 defense vs ranged attacks                          | 6    |
-| Fearsome Aura         | -1 to attacks within 2"+influence                     | 5    |
-| Hard to Hit           | -2 to attacks from beyond 6"                          | 8    |
-| Hardened              | -1 wound from all attacks                             | 12   |
-| Immovable             | +2 size vs push/throw                                 | 8    |
-| Relentless            | Two maneuvers per activation                          | 8    |
-| Supernatural Strength | +1 size for push/throw                                | 6    |
-| Teleport              | 4" teleport, no LOS needed                            | 8    |
-| Titanic Strength      | +2 size for push/throw                                | 10   |
-| Unmovable             | +1 size vs push/throw                                 | 4    |
+
+| Ability               | Description                                                    | Cost |
+|:----------------------|:---------------------------------------------------------------|:-----|
+| Blink                 | 6" teleport, requires LOS                                      | 6    |
+| Effect Resistance     | Remove one effect within 4" + reach at activation end          | 8    |
+| Evasion               | +2 defense vs ranged attacks                                   | 6    |
+| Fearsome Aura         | -1 to attacks within 2"+influence                              | 5    |
+| Focused Attack        | +2 to attack if no move action this turn                       | 8    |
+| Hard to Hit           | -2 to attacks from beyond 6"                                   | 8    |
+| Hardened              | -1 wound from all attacks                                      | 12   |
+| Immovable             | +2 size vs push/throw                                          | 8    |
+| Quick Shift           | 1" move that doesn't count as movement                         | 4    |
+| Relentless            | Two maneuvers per activation                                   | 8    |
+| Supernatural Strength | +1 size for push/throw                                         | 6    |
+| Take Cover            | Increase cover bonus by one                                    | 6    |
+| Taunt                 | Target can only move toward this model on it's next activation | 8    |
+| Teleport              | 4" teleport, no LOS needed                                     | 8    |
+| Throw                 | Throw target 2 sizes smaller within reach                      | 12   |
+| Throw Terrain         | Throw terrain 2 sizes smaller within reach                     | 10   |
+| Titanic Strength      | +2 size for push/throw                                         | 10   |
+| Unmovable             | +1 size vs push/throw                                          | 4    |
 
 ### Reaction Actions
-*Work in Progress*
-Allows response to enemy actions outside normal activation. Each has:
+
+*Allows response to enemy actions outside normal activation.*
+
+Each reaction has:
 - Specific trigger condition
 - Action cost
 - Effect
+
+**Available Reactions**
+
+| Reaction         | Trigger                        | Effect                                                     | Cost |
+|:-----------------|:-------------------------------|:-----------------------------------------------------------|:-----|
+| Brace for Impact | When targeted by push or throw | Cannot be pushed or thrown this attack                     | 12   |
+| Stand Ground     | When pushed or knocked back    | Reduce push/knockback distance by 2"                       | 8    |
+| Side Step        | When targeted by an attack     | Move 1" before attack resolves                             | 6    |
+
+- Reactions use exhaustion tokens like other actions
+- Each reaction can only be purchased once
+- Maximum 2 reactions per model
 
 ### Attack Creation Guide
 
@@ -120,6 +148,7 @@ Allows response to enemy actions outside normal activation. Each has:
 - **Cost**: 0
 
 #### Attack Construction Rules
+
 1. Maximum 4 attacks per character
 2. Minimum 1 attack per character
 3. Each 2 points of Attack Strength requires purchasing 1 effect
@@ -201,17 +230,20 @@ Allows response to enemy actions outside normal activation. Each has:
   - Strength 6: 20 points
 
 #### Movement Effects
+
 | Effect            | Description                                | Always | Match Suit | Both Suits |
 |:------------------|:-------------------------------------------|:-------|:-----------|:-----------|
 | Displace Attacker | Move attacker within 1" of target          | 6      | 4          | 1          |
 | Displace Defender | Move target within 1" of original position | 5      | 3          | 0          |
 | Knockback         | Push target 1" directly away               | 4      | 2          | 0          |
+| Throw             | Throw target if 2 sizes smaller            | 8      | 5          | 2          |
+| Throw Terrain     | Throw terrain if 2 sizes smaller           | 6      | 4          | 1          |
 
 #### Temporary Effects
+
 | Effect          | Description               | Always | Match Suit | Both Suits |
 |:----------------|:--------------------------|:-------|:-----------|:-----------|
 | Hinder          | -1 defense                | 3      | 2          | 0          |
-| Prone           | Target knocked prone      | 3      | 2          | 0          |
 | Reduce Energy   | -1 Energy Resistance      | 2      | 1          | 0          |
 | Reduce Physical | -1 Physical Resistance    | 2      | 1          | 0          |
 | Reduce Psyche   | -1 Psyche Resistance      | 2      | 1          | 0          |
@@ -222,10 +254,10 @@ Allows response to enemy actions outside normal activation. Each has:
 **Effect Stacking:** Temporary Effects can stack up to 3 times on a single target.
 
 #### Damage Effects
+
 | Effect           | Description               | Always | Match Suit | Both Suits |
 |:-----------------|:--------------------------|:-------|:-----------|:-----------|
 | Damage Over Time | 1 wound at activation end | 5      | 3          | 1          |
-| Critical Strike  | +1 wound if damaged       | -      | 3          | 1          |
 | Null Strike*     | No damage dealt           | -3     | -          | -          |
 
 *Requires at least one Always effect

@@ -10,6 +10,12 @@ Characters are created using a point-buy system. Points can be spent on:
 
 ## Base Stats
 
+**Strides:** Represents the model's movement speed and agility. [Rules for Movement](coreRules.md#movement).
+**Wounds:** Represents the model's health or endurance. A model is incapacitated when its wounds are reduced to zero.
+**Influence:** Represents the model's area of control. It affects the model's ability to control objectives and influence other models.
+**Attack Reach:** Represents the model's combat agility and or reach. It determines how far the model can effectively strike or interact in combat, abstracting the dynamic movements within a fight.
+**Resistances (Physical/Energy/Psyche):** Represents the model's ability to withstand different types of damage. Higher resistance values reduce the amount of damage taken from corresponding attack types.
+
 ### Size Categories
 
 Choose your model's size category first. This determines your starting stats:
@@ -20,8 +26,8 @@ Choose your model's size category first. This determines your starting stats:
 | Small         | 25-32mm   | 1          | 5       | 1      | 0"        | 0"           |
 | Medium        | 40-50mm   | 2          | 3       | 1      | 1"        | 1"           |
 | Large         | 60-80mm   | 3          | 2       | 1      | 3"        | 2"           |
-| Huge          | 90-120mm  | 4          | 1       | 2      | 4"        | 4"           |
-| Gargantuan    | 130-150mm | 5          | 1       | 2      | 5"        | 6"           |
+| Huge          | 90-120mm  | 4          | 1       | 2      | 4"        | 3"           |
+| Gargantuan    | 130-150mm | 5          | 1       | 2      | 5"        | 4"           |
 
 ^ must pay for wounds
 
@@ -54,8 +60,8 @@ Spend points to improve your base stats up to their maximum values:
 - Maximum: Base Influence + 2"
 
 **Attack Reach** (Melee Range)
-- Cost: 4 points per +1"
-- Maximum: Base Attack Reach + 3"
+- Cost: 5 points per +1"
+- Maximum: Base Attack Reach + 2"
 
 **Resistances** (Physical/Energy/Psyche)
 All models start with a value of 1 in two resistance types of your choice, and a value of 0 in the remaining resistance type. You can spend points to increase resistances up to a maximum of 5 in each. The cost increases progressively as the value rises:

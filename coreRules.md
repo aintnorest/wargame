@@ -7,11 +7,21 @@ Working Game Title: Conflict
 * Theme to be fleshed out later but to get a taste look in campaign.md
 * Goals: A strategic wargame that is model-agnostic, where model size matters, and all decisions have a significant impact.
 
+## Rules Priority
+
+When rules appear to conflict, follow this order of precedence:
+1. Scenario special rules
+2. Card/model special abilities
+3. Core rules in this document
+4. If multiple effects trigger simultaneously:
+   * The active player chooses the order for their effects
+   * Then the inactive player chooses the order for their effects
+
 ## Basic Luck Mechanic
 
-Conflict uses a modified deck of cards. The deck comprises Aces, 1s, 2s, 3s, and Jacks of each suit and both jokers. Aces are worth 1, 2s are worth 2, 3s are worth 3, Jacks are worth -1,  A Red Joker is worth -2 and counts as any suit, and A Black Joker is worth +4 and counts as no suit.
+Conflict uses a modified deck of cards. The deck comprises Aces, 1s, 2s, 3s, and Jacks of each suit and both jokers. Aces are worth 1, 2s are worth 2, 3s are worth 3, Jacks are worth -1,  A Red Joker is worth -2 and is wild meaning the player that flipped the card chooses what suit it counts for, and A Black Joker is worth +4 and counts as no suit played for that Joker.
   * Players flip two cards from the modified deck.
-  * For ties suite dominance is  Spades (♠), Hearts (♥), Diamonds (♦), and Clubs (♣)
+  * For ties suit dominance is  Spades (♠), Hearts (♥), Diamonds (♦), and Clubs (♣)
   * The result of the card flip is added to relevant character stats and modifiers to determine the success of an action (e.g., attacking, defending). The difference between the attacker's and defender's totals determines damage.
   
 ### Probability Calculations
@@ -80,10 +90,15 @@ Conflict uses a modified deck of cards. The deck comprises Aces, 1s, 2s, 3s, and
 
 ### Movement
 
-* **Base Movement:** A model has a number of Strides determined by its Size Category and character creation. Each Stride equals the length of the model's base diameter.
+* **Base Movement:** A model has a number of Strides determined by its Size Category and character creation.
 
 * **Move Action:** During its activation, a model may take one Move action. During a Move action, a model may do any combination of the following until it runs out of Strides:
-  * **Standard Move:** Move up to one Stride in any direction.
+  * **Standard Move:**
+    1. **Adjust Facing:** Before taking a stride, the model may adjust its facing.
+    2. **Determine Stride Length:**
+      * **Straight Movement:** If the model moves in a straight line directly forward from its new facing, the stride length is equal to the **longest base dimension**.
+      * **Non-Straight Movement:** If the model does *not* move in a straight line directly forward, the stride length is equal to the **shortest base dimension**.
+    3. Move up to the determined Stride length.
   * **Step Over:** Cross terrain up to half the model's size without spending additional Strides.
   * **Interact:** Spend 1 Stride while in base contact to interact with an objective or terrain.
   * **Climb:** When a model's base can fit on terrain that is their size or smaller:
@@ -96,33 +111,42 @@ Conflict uses a modified deck of cards. The deck comprises Aces, 1s, 2s, 3s, and
 ### Attack
 
 Each character has a number of attacks consisting of the following stats:
-* **Attack Type:** Physical, Energy, or Psyche
+* **Attack Type:**
+  * **Physical:** Direct damage through impact or force
+  * **Energy:** Damage through elemental or other power sources
+  * **Psyche:** Mental or spiritual damage
 * **Target Type:** One of the following:
   * Single Target: Attacks one model within range
-  * Area: Affects all models touching a circular area
-  * Breakthrough: Affects models in a 1" wide line
-  * Ricochet: Chain attack that hits multiple targets in sequence
+  * Area: Affects all models whose bases are touched by or partially within a circular template centered at the target point
+  * Breakthrough: Affects models whose bases are touched by or intersect with a 1" wide line drawn from the attacker's front arc
+  * Ricochet: Chain attack that hits multiple targets in sequence, following line of sight rules between each target
 * **Range:** Distance from attacker to target(s), added to Attack Reach
+  * Measure from closest point of attacker's base to:
+    * Single Target: Closest point of target's base
+    * Area: Center point of area template
+    * Breakthrough: Any point along the line
+    * Ricochet: First target only, subsequent targets measured from previous target
 * **Attack Strength:** Base power of the attack (1-6)
 * **Effects:** Optional modifiers that trigger in one of three ways:
-  * Always: Effect happens on every successful hit
-  * Match Suit: Effect triggers if either attack card matches target's suit
-  * Both Suits: Effect triggers if both attack cards match target's suit
+  * Always: Effect happens immediately after damage resolution
+  * Match Suit: Effect triggers after damage if either attack card matches target's suit
+  * Both Suits: Effect triggers after damage if both attack cards match target's suit
+  * Note: Multiple effects resolve in the order chosen by the attacker
 
 For more information on attack construction and types of effects that can be added, refer to the [Character Creation document](characterCreation.md#attack-creation-guide).
 
 ### Strategic Placement
-NOTE: Maybe get rid of engagement for simplicity make it an ability.
-* **Engagement:** While within the Attack Reach of one or more enemy models, a model cannot end its movement at a distance greater than its starting distance from the closest engaging enemy, unless using the Disengage maneuver.
+
 * **Attack Reach:** Determined by Size Category. Represents the zone within which a model can make melee attacks or interact with objectives.
-* **Influence:** Determined by Size Category. Represents the radius around a model within which it exerts control for zone objectives. For zone control, a model is considered to be within the zone if any part of its Base Influence is within the zone.
-* **Flanking:** A model is considered to have attacked an enemy from behind if the attacking model is positioned in the target model's rear arc. The rear arc is defined as the half of the target model's base that is opposite the attacking model's front arc. An attacking model gains a +1 bonus to their attack roll when flanking.
-* **High Ground:** If a model attacks an enemy from a terrain feature that is at least two size categories higher than the target, the attacking model gains a +1 bonus to their attack roll.
 * **Cover:**
   * No Cover: Clear LOS.
   * Partial Cover (+1 to defense roll): Terrain Size = Character Size - 1.
   * Full Cover (+2 to defense roll): Terrain Size <= Character Size - 2.
   * Obscured (No LOS): Terrain Size >= Character Size.
+* **Flanking:** A model is considered to have attacked an enemy from behind if the attacking model is positioned in the target model's rear arc. The rear arc is defined as the half of the target model's base that is opposite the attacking model's front arc. An attacking model gains a +1 bonus to their attack roll when flanking.
+* **GangUp:** If a target is engaged in melee by two or more models, the attacker(s) gain a +1 bonus to their attack roll. This bonus is cumulative for each additional model engaged in melee with the target, up to a maximum of +3. A model is considered "engaged" if it is within its [Attack Reach](characterCreation.md#base-stats) of the target.
+* **High Ground:** If a model attacks an enemy from a terrain feature that is at least two size categories higher than the target, the attacking model gains a +1 bonus to their attack roll.
+* **Influence:** Determined by Size Category. Represents the radius around a model within which it exerts control for zone objectives. For zone control, a model is considered to be within the zone if any part of its Base Influence is within the zone.
 
 ### Interactions
 
@@ -146,8 +170,8 @@ NOTE: Maybe get rid of engagement for simplicity make it an ability.
 
 ### Combat Resolution
   1. Declare Target and Attack.
-  2. Attacker flips two cards (A=1, 2=2, 3=3, J=-1, Red Joker = -2, Black Joker = +4) and sums. Adds Attack Skill and attack bonuses. (Total Attack Value)
-  3. Defender flips two cards and sums. Adds relevant Resistance and defense bonuses. (Total Defense Value)
+  2. Attacker takes card resolution total + attack skill + Attack Bonuses - Weaken Tokens = Total Attack Value.
+  3. Defender takes card resolution total + relevant Resistance + defense bonuses - Hindered tokens - relevant reduced resistance tokens = Total Defense Value.
   4. If Total Attack Value > Total Defense Value: Hit. Damage = Difference.
   5. If Total Attack Value <= Total Defense Value: Miss.
   6. Apply Damage (reduce Wounds).

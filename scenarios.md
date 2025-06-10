@@ -2,6 +2,9 @@
 
 ## Pre-Game Setup
 
+### 0. Matchmaking
+  **Conflict** rules should support many play variations. The goal is to ensure no matter how many people showed up to play that everyone gets to play. This means games might be 1v1v1 or 2v1 or other combinations.
+
 ### 1. Team Creation
 - Players create teams using a point-buy system
 - Each character has an assigned point cost
@@ -14,12 +17,13 @@
 - Add applicable modifiers from:
   - Model special abilities
   - Scenario terrain effects
+  - If a team is has fewer points they gain half the difference round down up to a max of a 3 point bonus.
 - Highest total wins initiative
 - Ties are resolved by [suit order](coreRules.md#basic-luck-mechanic) or repeated flips until clear winner emerges
 
 ### 3. Scenario Selection
 - Each player secretly selects one scenario from shared list
-- Both scenarios are active unless identical
+- All scenarios are active unless identical
   - If same scenario chosen, only one copy is in play
 - Each player also selects a secondary goal
   - Regular games: Awards bonus victory points

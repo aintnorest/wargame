@@ -20,13 +20,34 @@ In campaign play, players take on the role of mercenary leaders, beginning their
 
 ### Starting a Campaign
 
-Get a group of friends. Each player will need to document the rise of their mercenary company. This is intended to be shared, and lore/fluff is encouraged. Decide how long you want the campaign to run for. The player with the highest ranking at the end wins. Players will use the [Character Creation](characterCreation.md) rules and 45 points to build their leader. They will then play a game with a singular scenario: [Seize Fate](#starting-scenario-seize-fate).
+Get a group of friends. Each player will need to document the rise of their mercenary company. This is intended to be shared, and lore/fluff is encouraged. Decide how long you want the campaign to run for. Players will use the [Character Creation](characterCreation.md) rules and 45 points to build their leader. They will then start by play a game with a singular scenario: [Seize Fate](#starting-scenario-seize-fate).
 
 ### Setting up a Campaign Game
+  Is similar to non-campaign [scenario play](scenarios.md). The following list calls out the differences.
 
-- Matchmaking:
-  **Conflict** rules should support many play variations. The first goal is to ensure no matter how many people showed up to play that everyone gets to play. This means games might be 1v1v1 or 2v1 or other combinations. Secondly, this system wants to put together fun games that are not lopsided. There is a mechanism for scoring players, and in all matchmaking, score should be used to get games as close as possible. That will mean some games make sense at a 1v1, but sometimes it will make more sense to do a 2v2. In any game where a side has multiple players, divide the army points evenly. If that isn't doable, only the player with the higher score on a team may spend fewer points so their teammate can bring more. This is intended to help get games as close as possible in points when players won't have access to the same points.
+- Team Creation:
+  Teams can only be constructed with characters built and improved through the current campaign. All players need to agree on a point total that all players present could field within 6 points. 
+- Scenario Selection:
+  After the first game with Seize Fate follow the [Scenario Selection Rules](scenarios.md#3-scenario-selection). The differences in campaign play will be called out in the rules for the scenario. The primary difference is instead of tracking scenario points as a whole scenario points are tracked per scenario.
+- Terrain Placement:
+  Specifically [Advantageous Terrain](scenarios.md#advantageous-terrain) can only be selected if you've gained access to a specific piece through campaign mode. Campaign specific Scenarios will have Advantageous Terrain that can be a reward.
+- Victory Conditions:
+  In campaign play victory isn't as clear cut and both sides could come away feeling like the victor. There are several [Campaign Currencies](#campaign-currencies). **Coin** can only be gained by winning the scenario the player selected. Wining the opponents Scenario gains you **Renown** Secondary Goals can also earn you **Renown** or **Coin** but not both.
+  Total Score = Scenario Points + Secondary Goal Points + Leader Kill Points
+<!-->
+  NOTES
+  I want to have a ranking system that:
+  - Is a multiplier on rewards. (If you play someone better ranked your rewards are better than if you play a lower ranked player)
+  - Rewards good performance across multiple aspects of the game.
+  - Prevents extreme rating fluctuations.
+  - Adjusts point totals in a balanced way.
+  - Keeps the campaign competitive and engaging for all players.
 
+  Games don't have a Win or a Loss
+  Games will play with anywhere from 1 - 4 scenarios at the same time Each Scenario can be worth from 0 - 5 Scenario points a round and can run for 5 rounds
+  Secondary goals are one offs that can each be worth up to 5 scenario points only the player that selected the secondary goal is eligible to win it's points.
+  Killing the opponents leader is worth 5 scenario points.
+-->
 WIP
 
 ## Campaign Currencies
@@ -36,10 +57,8 @@ Campaign progression is tracked through two primary currencies: **Renown** & **C
 ### Coin
 
 The economic backbone of your mercenary company, earned primarily through successful contracts. This currency lets you train or transform members of your organization.
-
-<!--
-NOTE: Each team has their own scenario the job they were hired to do they get paid based on that but maybe they get renown for stopping the opposing team or keeping their points low some how.
--->
+- Training a character allows the player to change Attack, Ability, or Reaction Actions. This can include Purchasing a new action, adding effects to a current action, or replacing an old action (If you replace an previous action regain half the points the previous action cost). Cost of training is a **Coin** per character creation point.
+- Transform allows a player to change a characters Size Category and or Stat Improvements. The **Coin** cost is 5 + 1 per character creation point.
 
 ### Renown
 

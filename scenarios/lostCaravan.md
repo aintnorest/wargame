@@ -11,8 +11,8 @@ A merchant's caravan has gone missing. Mercenary company is hired to locate the 
 
 ### Special Rules
 - **Caravan Search:** The central objective marker represents the wrecked caravan. A model can interact with the marker to search the caravan:
-  - 1 - 5: Recover a good worth 1 scenario point (Up to 5 scenario points maybe found a round).
-  - 6: Recover Merchant, pick up Merchant Token. Token is dropped if character takes damage. Once merchant is found searching the caravan will always follow rules for Recovering a good.
+  - **Card Result -3 to 2:** Recover a good worth 1 scenario point (Up to 5 scenario points may be found a round).
+  - **Card Result 3 or Higher:** Recover Merchant, pick up Merchant Token. Token is dropped if character takes damage. Once merchant is found searching the caravan will always follow rules for Recovering a good.
 - **Scattered Goods:** The objective markers to either side of caravan are scatter goods. A model can interact with these markers to claim the good. Each good is worth 1 victory point and is removed once claimed.
 - **Merchant Rescue:** Rescuing the merchant (get a character holding the Merchant Token within Interact Distance of the same Player's board edge) is worth 3 scenario points. If the merchant token is dropped it cannot be overlapped and can be picked up with an interact.
 <!--
